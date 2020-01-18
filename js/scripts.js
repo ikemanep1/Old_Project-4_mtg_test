@@ -8,14 +8,18 @@ $(document).ready(function() {
     var companion = parseInt($("#companionship").val());
     var identity = parseInt($("#ideology").val());
     var results = resolution + weapon + society + companion + identity;
-    if (results > 0 && results <= 15) {
+    if (results > 0 && results <= 5) {
       $(".result").text("You are a white planeswalker. You value order and society, at the expense of individualism.");
-    } else if (results > 15 && results <= 30 ) {
+    } else if (results > 5 && results <= 10 ) {
       $(".result").text("You are a blue planeswalker. You value knowledge and perfection at the expense of sheer power.");
-    } else if (results > 30 && results <= 45 ) {
+    } else if (results > 10 && results <= 15 ) {
       $(".result").text("You are a black planeswalker. You value power and excess at the expense of morality.");
-    } else if (results > 30 && results <= 45 ) {
-      $(".result").text("You are a black planeswalker. You value power and excess at the expense of morality.");
-    $(".result").text(results);
+    } else if (results > 15 && results <= 20 ) {
+      $(".result").text("You are a red planeswalker. You value passion and freedom at the expense of order.");
+    } else if (results > 20 && results <= 25 ) {
+      $(".result").text("You are a green planeswalker. You value nature and instinct at the expense of technology.");
+    } else {
+   alert('Please fill out the entire form.');
+ }
   });
 });
