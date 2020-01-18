@@ -1,85 +1,86 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>MTG color test:</title>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/scripts.js"></script>
-  </head>
-  <body>
-    <form class="form_logic" id="mtg_test" action="index.html" method="post">
-      <p>You're at the bar, when a brawl breaks out. How do you react?</p>
-      <select class="form-control" id="conflict_resolution">
-        <option value="0">BLANK</option>
-        <option value="1">I reason with the most aggressive, calming them down. I join everyone in cleaning the establishment once the fighting is done.</option>
-        <option value="2">I avoid the fighting, instead observing closely the cqc techniques employed by those around me. I then exit silently, having gained power through knowledge.</option>
-        <option value="3">I steal all that I can, and use the fighting around me to avoid being seen.</option>
-        <option value="4">I join in the fighting for the thrill of it.</option>
-        <option value="5">I use my instincts, and decide to avoid the fighting. The best way to win this fight is simply to not take part in it.</option>
-      </select>
-      <div class="weapons">
-  <label>
-    <p>Select your ideal weapon:</p>
-    <input type="radio" name="weapon" value="0" checked>
-    BLANK
-  </label>
-</div>
-<div class="radio">
-  <label>
-    <input type="radio" name="weapon" value="1">
-    I fight with a sword blessed by angels, one that can help me protect others.
-  </label>
-</div>
-<div class="radio" id="weapon">
-  <label>
-    <input type="radio" name="weapon" value="2">
-  A magical staff, one that channels my combined knowledge.
-  </label>
-  <label>
-    <input type="radio" name="weapon" value="3">
-  A halberd, yes...one long enough to kill my enemies without getting myself dirty.
-  </label>
-  <label>
-    <input type="radio" name="weapon" value="4">
-  I fight with a greatsword, jagged and brutal, able to channel my fury.
-  </label>
-  <label>
-    <input type="radio" name="weapon" value="5">
-    I'll stick to what nature has given me. Fists are as lethal as any weapon, plus they're adaptable.
-  </label>
-</div>
-<p>Which society resonates with you the most?</p>
-<select class="form-control" id="society_preference">
-  <option value="0">BLANK</option>
-  <option value="1">A conclave of equal persons working together.</option>
-  <option value="2">An academy, oh yes. A place that puts aside trivial squabbles to allow perfection and knowledge to flourish.</option>
-  <option value="3">A dominion under me, where I am the ruler, and my subjects only live because they have earned the right to do so, as I have earned the right to rule.</option>
-  <option value="4">Complete anarchy, man. Oh, and arenas.</option>
-  <option value="5">A forest. TBH I already live in the ideal world, everything happens because it is natural, and that is the meaning of balance.</option>
-</select>
-<p>What animal would you most likely have as your companion?</p>
-<select class="form-control" id="companionship">
-  <option value="0">BLANK</option>
-  <option value="1">A hardy steed, that will carry me to victory.</option>
-  <option value="2">A hawk, that sees all.</option>
-  <option value="3">A swarm of rats, that will bring death to all who are not me.</option>
-  <option value="4">A giant lizard from the mountains, that shows obedience to nobody.</option>
-  <option value="5">A deer, that brings mana.</option>
-</select>
-<p>What is most important to you?</p>
-<select class="form-control" id="ideology">
-  <option value="0">BLANK</option>
-  <option value="1">Honor.</option>
-  <option value="2">Perfection.</option>
-  <option value="3">Power.</option>
-  <option value="4">Freedom.</option>
-  <option value="5">Trees.</option>
-</select>
-<p id="submission"><input type="submit" value="Submit!"></p>
-    </form>
-    <div class="result">
-
+<head>
+  <title>MTG color test:</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+<body>
+  <form class="form_logic" id="mtg_test" action="index.html" method="post">
+    <p>You're at the bar, when a brawl breaks out. How do you react?</p>
+    <select class="form-control" id="conflict_resolution">
+      <option value="0">BLANK</option>
+      <option value="1">I reason with the most aggressive, calming them down. I join everyone in cleaning the establishment once the fighting is done.</option>
+      <option value="2">I avoid the fighting, instead observing closely the cqc techniques employed by those around me. I then exit silently, having gained power through knowledge.</option>
+      <option value="3">I steal all that I can, and use the fighting around me to avoid being seen.</option>
+      <option value="4">I join in the fighting for the thrill of it.</option>
+      <option value="5">I use my instincts, and decide to avoid the fighting. The best way to win this fight is simply to not take part in it.</option>
+    </select>
+    <div class="weapons">
+      <label>
+        <p>Select your ideal weapon:</p>
+        <input type="radio" name="weapon" value="0" checked>
+        BLANK
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="weapon" value="1">
+        I fight with a sword blessed by angels, one that can help me protect others.
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="weapon" value="2">
+        A magical staff, one that channels my combined knowledge.
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="weapon" value="3">
+        A halberd, yes...one long enough to kill my enemies without getting myself dirty.
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="weapon" value="4">
+        I fight with a greatsword, jagged and brutal, able to channel my fury.
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="weapon" value="5">
+        I'll stick to what nature has given me. Fists are as lethal as any weapon, plus they're adaptable.
+      </label>
+      <br>
     </div>
-  </body>
+    <p>Which society resonates with you the most?</p>
+    <select class="form-control" id="society_preference">
+      <option value="0">BLANK</option>
+      <option value="1">A conclave of equal persons working together.</option>
+      <option value="2">An academy, oh yes. A place that puts aside trivial squabbles to allow perfection and knowledge to flourish.</option>
+      <option value="3">A dominion under me, where I am the ruler, and my subjects only live because they have earned the right to do so, as I have earned the right to rule.</option>
+      <option value="4">Complete anarchy, man. Oh, and arenas.</option>
+      <option value="5">A forest. TBH I already live in the ideal world, everything happens because it is natural, and that is the meaning of balance.</option>
+    </select>
+    <p>What animal would you most likely have as your companion?</p>
+    <select class="form-control" id="companionship">
+      <option value="0">BLANK</option>
+      <option value="1">A hardy steed, that will carry me to victory.</option>
+      <option value="2">A hawk, that sees all.</option>
+      <option value="3">A swarm of rats, that will bring death to all who are not me.</option>
+      <option value="4">A giant lizard from the mountains, that shows obedience to nobody.</option>
+      <option value="5">A deer, that brings mana.</option>
+    </select>
+    <p>What is most important to you?</p>
+    <select class="form-control" id="ideology">
+      <option value="0">BLANK</option>
+      <option value="1">Honor.</option>
+      <option value="2">Perfection.</option>
+      <option value="3">Power.</option>
+      <option value="4">Freedom.</option>
+      <option value="5">Trees.</option>
+    </select>
+    <p id="submission"><input type="submit" value="Submit!"></p>
+  </form>
+  <div class="result">
+  </div>
+</body>
 </html>
