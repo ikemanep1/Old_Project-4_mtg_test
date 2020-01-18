@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>MTG color test:</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
   </head>
   <body>
-    <h1></h1>
-    <script src="js/scripts.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
+    <form class="mtg_test" action="index.html" method="post">
+      <p>You're at the bar, when a brawl breaks out. How do you react?</p>
+      <select class="form-control" id="conflict_resolution">
+        <option value="0">BLANK</option>
+        <option value="1">I reason with the most aggressive, calming them down. I join everyone in cleaning the establishment once the fighting is done.</option>
+        <option value="2">I avoid the fighting, instead observing closely the cqc techniques employed by those around me. I then exit silently, having gained power through knowledge.</option>
+        <option value="3">I steal all that I can, and use the fighting around me to avoid being seen.</option>
+        <option value="4">I join in the fighting for the thrill of it.</option>
+        <option value="5">I use my instincts, and decide to avoid the fighting. The best way to win this fight is simply to not take part in it.</option>
+      </select>
+    </form>
   </body>
 </html>
