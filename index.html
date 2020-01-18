@@ -8,7 +8,7 @@
     <script src="js/scripts.js"></script>
   </head>
   <body>
-    <form class="mtg_test" action="index.html" method="post">
+    <form id="mtg_test" action="index.html" method="post">
       <p>You're at the bar, when a brawl breaks out. How do you react?</p>
       <select class="form-control" id="conflict_resolution">
         <option value="0">BLANK</option>
@@ -21,31 +21,31 @@
       <div class="weapons">
   <label>
     <p>Select your ideal weapon:</p>
-    <input type="radio" name="blank" value="0" checked>
+    <input type="radio" name="weapon" value="0" checked>
     BLANK
   </label>
 </div>
 <div class="radio">
   <label>
-    <input type="radio" name="sword" value="1">
+    <input type="radio" name="weapon" value="1">
     I fight with a sword blessed by angels, one that can help me protect others.
   </label>
 </div>
 <div class="radio" id="weapon">
   <label>
-    <input type="radio" name="staff" value="2">
+    <input type="radio" name="weapon" value="2">
   A magical staff, one that channels my combined knowledge.
   </label>
   <label>
-    <input type="radio" name="halberd" value="3">
+    <input type="radio" name="weapon" value="3">
   A halberd, yes...one long enough to kill my enemies without getting myself dirty.
   </label>
   <label>
-    <input type="radio" name="greatsword" value="4">
+    <input type="radio" name="weapon" value="4">
   I fight with a greatsword, jagged and brutal, able to channel my fury.
   </label>
   <label>
-    <input type="radio" name="fists" value="5">
+    <input type="radio" name="weapon" value="5">
     I'll stick to what nature has given me. Fists are as lethal as any weapon, plus they're adaptable.
   </label>
 </div>
@@ -76,6 +76,10 @@
   <option value="4">Freedom.</option>
   <option value="5">Trees.</option>
 </select>
+<button type="submit" class="btn">Submit!</button>
     </form>
+    <div class="result">
+
+    </div>
   </body>
 </html>
